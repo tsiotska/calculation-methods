@@ -1,0 +1,7 @@
+C:\Users\Vitaliy\source\repos\GoldIntersection\GoldIntersection\bin\Debug\GoldIntersection.exe.config
+C:\Users\Vitaliy\source\repos\GoldIntersection\GoldIntersection\bin\Debug\GoldIntersection.exe
+C:\Users\Vitaliy\source\repos\GoldIntersection\GoldIntersection\bin\Debug\GoldIntersection.pdb
+C:\Users\Vitaliy\source\repos\GoldIntersection\GoldIntersection\obj\Debug\GoldIntersection.csprojAssemblyReference.cache
+C:\Users\Vitaliy\source\repos\GoldIntersection\GoldIntersection\obj\Debug\GoldIntersection.csproj.CoreCompileInputs.cache
+C:\Users\Vitaliy\source\repos\GoldIntersection\GoldIntersection\obj\Debug\GoldIntersection.exe
+C:\Users\Vitaliy\source\repos\GoldIntersection\GoldIntersection\obj\Debug\GoldIntersection.pdb
