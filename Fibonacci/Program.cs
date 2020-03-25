@@ -13,10 +13,9 @@ namespace Fibonacci
         static List<double> F = new List<double>() { 1, 1 };
         static List<double> A = new List<double>() { 1.5 },
             B = new List<double>() { 2 },
-            Z = new List<double>() { 0 }, //Зміщую індексування на 1 таким чином. Не шарю С#. Звертання до листа по індексу на запис вроді неможливе
+            Z = new List<double>() { 0 },
             T = new List<double>() { 0 };
-        //    Fz = new List<double>() { 0 },
-        //    Ft = new List<double>() { 0 };
+      
 
         static double Function(double x)
         {
@@ -26,7 +25,7 @@ namespace Fibonacci
         static void Main(string[] args)
         {
             int m, j = 0;
-            F.Add(F[j + 1] + F[j]); //Число 2
+            F.Add(F[j + 1] + F[j]); 
             
             while (true)
             {               
@@ -45,9 +44,7 @@ namespace Fibonacci
 
             T.Add(A[0] + (F[m] / F[m + 2]) * (B[0] + A[0]));             
             Z.Add(A[0] + (F[m + 1] / F[m + 2]) * (B[0] + A[0]));                                   
-         
-        //  Ft.Add(Function(T[0])); 
-        //  Fz.Add(Function(Z[0]));            
+                       
 
             if (Function(T[0]) <= Function(Z[0]))
             {
@@ -66,17 +63,13 @@ namespace Fibonacci
             {            
                 if (Function(T[k]) <= Function(Z[k]))
                 {                   
-                    T.Add(A[k] + (F[m - k] / F[m + 2]) * (B[0] + A[0]));
-                //    Ft.Add(Function(T[k + 1]));
-                    Z.Add(T[k]);
-                 //   Fz.Add(Function(Z[k + 1]));
-                }
+                    T.Add(A[k] + (F[m - k] / F[m + 2]) * (B[0] + A[0]));               
+                    Z.Add(T[k]);     
+               }
                 else
                 {
                     T.Add(Z[k]);
-                  //  Ft.Add(Function(T[k + 1]));
                     Z.Add(A[k] + (F[m - k + 1] / F[m + 2]) * (B[0] + A[0]));                                    
-                  //  Fz.Add(Function(Z[k + 1]));
                 }
 
                 if (Function(T[k+1]) <= Function(Z[k+1]))
@@ -100,7 +93,7 @@ namespace Fibonacci
                 {
                     Console.WriteLine("a: " + A[m] + " b: " + B[m]);                  
                     x = (A[m] + B[m]) / 2;
-                    Console.WriteLine("x is: " + x); //Дуже погана відповідь, геть не розумію цей алгоритм
+                    Console.WriteLine("x is: " + x); 
                     break;
                 }
             }
