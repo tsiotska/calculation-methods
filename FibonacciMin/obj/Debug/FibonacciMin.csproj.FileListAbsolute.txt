@@ -1,0 +1,7 @@
+C:\Users\Vitaliy\source\repos\FibonacciMin\FibonacciMin\bin\Debug\FibonacciMin.exe.config
+C:\Users\Vitaliy\source\repos\FibonacciMin\FibonacciMin\bin\Debug\FibonacciMin.exe
+C:\Users\Vitaliy\source\repos\FibonacciMin\FibonacciMin\bin\Debug\FibonacciMin.pdb
+C:\Users\Vitaliy\source\repos\FibonacciMin\FibonacciMin\obj\Debug\FibonacciMin.csprojAssemblyReference.cache
+C:\Users\Vitaliy\source\repos\FibonacciMin\FibonacciMin\obj\Debug\FibonacciMin.csproj.CoreCompileInputs.cache
+C:\Users\Vitaliy\source\repos\FibonacciMin\FibonacciMin\obj\Debug\FibonacciMin.exe
+C:\Users\Vitaliy\source\repos\FibonacciMin\FibonacciMin\obj\Debug\FibonacciMin.pdb
