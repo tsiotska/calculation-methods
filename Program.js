@@ -1,24 +1,34 @@
 //Open index.html in browser and press F12
-const Function = (x) => {
+func = (x) => {
   return Math.pow(x, 4) + Math.pow(x, 2) + x + 1;
 };
 
-const passiveSorting = (a, b, e) =>{
- // const dx = math.derivative('x^4+x^2+x+1', 'x').evaluate({x : a});
-  /*Не розумію чому не працює метод evaluate (math це бібліотека), Нехай ліпшиця буде b*/
+Execute = (a, b, e, callback) =>{
   const L = b;
   const h = 2 * e / L;
   const x = [], fx = [];
   x.push(a + h / 2);
-  fx.push(Function(x[0]));
+  fx.push(func(x[0]));
 
-  while ((x[x.length - 1] + h) <= b) { //між а та б!
-    x.push(x[x.length - 1] + h);
-    fx.push(Function(x[x.length - 1]));
+  while ((x[x.length - 1] + h) <= b) {
+   callback(x, fx, h, L);
+   fx.push(func(x[x.length - 1]));
   }
 
   let minFx = Math.min(...fx);
-  console.log("min f(x) is " + minFx)
+  let index = fx.indexOf(minFx);
+  console.log(callback.name);
+  console.log("min f(x) is " + minFx + "\n" + "and x is: " + index)
 };
 
-passiveSorting(-1, 2, 0.05);
+passiveSorting = (x, fx, h) =>{
+  x.push(x[x.length - 1] + h);
+};
+
+completeSorting  = (x, fx, h, L) =>{
+  x.push(x[x.length - 1] + h + ((func(x[x.length - 1]) - fx[fx.length - 1]) / L));
+};
+
+
+Execute(-1, 2, 0.05, passiveSorting);
+Execute(-1, 2, 0.05, completeSorting);
