@@ -73,4 +73,4 @@ vectorLength = (array) => {
   return Math.sqrt(sum)
 };
 
-gradient(0.1, 0.7, 0.5);
+gradient(0.3, 0.9, 0.5);
