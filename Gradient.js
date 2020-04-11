@@ -38,7 +38,7 @@ gradient = (a, b, e) => {
 
     let result = gradf(x[k]);
 
-    if (!vectorLength(result)) {
+    if (vectorLength(result) < e) {
       show(x[k], func(x[k]));
       break;
     }
@@ -52,12 +52,6 @@ gradient = (a, b, e) => {
     if (func(position) - func(x[k]) <= edge) {
       x.push(position);
       k++;
-
-      if (vectorLength(gradf(x[k])) < 0.1) {
-        console.log("RETURN IT!!!");
-        show(x[k], func(x[k]));
-        break;
-      }
     } else {
       console.log(a);
       a *= b;
